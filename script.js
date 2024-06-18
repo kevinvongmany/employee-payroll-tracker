@@ -27,13 +27,13 @@ const collectEmployees = function () {
     if (!isNaN(inputSalary)) {
       employee.salary = Number(inputSalary);
     }
+
     // finally we have to push the user-entered employee details into the `employees` array
     employees.push(employee);
 
     // ask the user to add another OR finish and break out of the loop
     addEmployees = confirm("Do you wish to add more employees?");
   }
-
   return employees;
 };
 
