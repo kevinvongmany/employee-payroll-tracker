@@ -15,6 +15,8 @@ const collectEmployees = function () {
     // 'last name'
     // 'salary'
 
+    // we also have to validate that the salary is a number, otherwise set it to 0.
+
     addEmployees = confirm("Do you wish to add more employees?") // ask the user to add another OR finish and break out of the loop
   }
 
