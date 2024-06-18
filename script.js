@@ -40,6 +40,12 @@ const collectEmployees = function () {
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
+  // we know that the employees array that we built in collectEmployees() will return an object with the `salary` attribute.
+  // we have to extract a list of all the values, explicitly from the employees array.
+
+  // calculate the average of all of the values, we know that the average should be the sum of all values, divided by the total number of values.
+
+  // log the value in the console, we don't need to return anything
 };
 
 // Select a random employee
