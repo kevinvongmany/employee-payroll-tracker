@@ -46,6 +46,7 @@ const displayAverageSalary = function (employeesArray) {
   // calculate the average of all of the values, we know that the average should be the sum of all values, divided by the total number of values.
 
   // log the value in the console, we don't need to return anything
+  console.log(`The average employee salary between our x employees is $...`);
 };
 
 // Select a random employee
