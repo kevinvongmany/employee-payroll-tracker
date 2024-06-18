@@ -47,6 +47,12 @@ const displayAverageSalary = function (employeesArray) {
   // ref: https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array
 
   // calculate the average of all of the values, we know that the average should be the sum of all values, divided by the total number of values.
+  const employeeTotal = salaries.length; // get the total number of salaries by getting the length of the salary array
+  let sum = 0; // initialise a `sum` number variable, we'll add each salary value into this variable
+  for (let salary in salaries) {
+    sum += salary; // loop through every salary value and add it to our `sum` variable
+  };
+  const average = sum / employeeTotal; // calculate the average
 
   // log the value in the console, we don't need to return anything
   console.log(`The average employee salary between our x employee(s) is $...`);
