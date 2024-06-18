@@ -40,6 +40,26 @@ const collectEmployees = function () {
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
+  // we know that the employees array that we built in collectEmployees() will return an object with the `salary` attribute.
+  // we have to extract a list of all the values, explicitly from the employees array.
+  const salaries = employeesArray.map(a => a.salary); // returns `[100000, 90000, ...]`
+  // the `map` function returns an array of values from an object, and we select the salary key to extract the values from
+  // ref: https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array
+
+  // calculate the average of all of the values, we know that the average should be the sum of all values, divided by the total number of values.
+  const employeeTotal = salaries.length; // get the total number of salaries by getting the length of the salary array
+  let sum = salaries.reduce((acc, current) => {
+    return acc + current;
+  }, 0); // this function sums all the numbers of an array into a total number
+  // ref: https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/
+  
+  const average = (sum / employeeTotal).toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+  }); // calculate the average and convert it to currency format
+
+  // log the value in the console, we don't need to return anything
+  console.log(`The average employee salary between our ${employeeTotal} employee(s) is ${average}`);
 };
 
 // Select a random employee
