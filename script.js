@@ -8,9 +8,14 @@ const collectEmployees = function () {
 
   let addEmployees = true // initialise a flag to start loop
   while (addEmployees) {
+    // initialise a blank employee object 
     
+    // we need to prompt the user to enter in:
+    // 'first name',
+    // 'last name'
+    // 'salary'
 
-    addEmployees = confirm("Do you wish to add more employees?") // ask the user to continue or finish and then break out of the loop
+    addEmployees = confirm("Do you wish to add more employees?") // ask the user to add another OR finish and break out of the loop
   }
 
   return employees
