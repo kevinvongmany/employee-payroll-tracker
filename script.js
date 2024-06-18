@@ -1,26 +1,40 @@
 // Get a reference to the #add-employees-btn element
-const addEmployeesBtn = document.querySelector('#add-employees-btn');
+const addEmployeesBtn = document.querySelector("#add-employees-btn");
 
 // Collect employee data
 const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
-  const employees = []
+  const employees = [];
 
-  let addEmployees = true // initialise a flag to start loop
+  let addEmployees = true; // initialise a flag to start loop
   while (addEmployees) {
-    // initialise a blank employee object 
-    
+    // initialise a blank employee object
+    const employee = {
+      firstName: "",
+      lastName: "",
+      salary: 0, // initialise the salary to be 0, this can be overwritten later if the user enters a valid number
+    };
+
     // we need to prompt the user to enter in:
     // 'first name',
+    employee.firstName = prompt("Enter first name: ");
     // 'last name'
+    employee.lastName = prompt("Enter last name: ");
     // 'salary'
+    let inputSalary = prompt("Enter salary: "); // we store it in a temporary variable, to check if its valid, instead of loading it straight into the `employee` object
 
-    // we also have to validate that the salary is a number, otherwise set it to 0.
+    // we also have to validate that the salary is a number, otherwise leave it as 0.
+    if (!isNaN(inputSalary)) {
+      employee.salary = Number(inputSalary);
+    }
+    // finally we have to push the user-entered employee details into the `employees` array
+    employees.push(employee);
 
-    addEmployees = confirm("Do you wish to add more employees?") // ask the user to add another OR finish and break out of the loop
+    // ask the user to add another OR finish and break out of the loop
+    addEmployees = confirm("Do you wish to add more employees?");
   }
 
-  return employees
+  return employees;
 };
 
 // Display the average salary
@@ -42,30 +56,30 @@ const getRandomEmployee = function (employeesArray) {
 // Display employee data in an HTML table
 const displayEmployees = function (employeesArray) {
   // Get the employee table
-  const employeeTable = document.querySelector('#employee-table');
+  const employeeTable = document.querySelector("#employee-table");
 
   // Clear the employee table
-  employeeTable.innerHTML = '';
+  employeeTable.innerHTML = "";
 
   // Loop through the employee data and create a row for each employee
   for (let i = 0; i < employeesArray.length; i++) {
     const currentEmployee = employeesArray[i];
 
-    const newTableRow = document.createElement('tr');
+    const newTableRow = document.createElement("tr");
 
-    const firstNameCell = document.createElement('td');
+    const firstNameCell = document.createElement("td");
     firstNameCell.textContent = currentEmployee.firstName;
     newTableRow.append(firstNameCell);
 
-    const lastNameCell = document.createElement('td');
+    const lastNameCell = document.createElement("td");
     lastNameCell.textContent = currentEmployee.lastName;
     newTableRow.append(lastNameCell);
 
-    const salaryCell = document.createElement('td');
+    const salaryCell = document.createElement("td");
     // Format the salary as currency
-    salaryCell.textContent = currentEmployee.salary.toLocaleString('en-US', {
-      style: 'currency',
-      currency: 'USD',
+    salaryCell.textContent = currentEmployee.salary.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
     });
 
     newTableRow.append(salaryCell);
@@ -81,7 +95,7 @@ const trackEmployeeData = function () {
 
   displayAverageSalary(employees);
 
-  console.log('==============================');
+  console.log("==============================");
 
   getRandomEmployee(employees);
 
@@ -97,4 +111,4 @@ const trackEmployeeData = function () {
 };
 
 // Add event listener to 'Add Employees' button
-addEmployeesBtn.addEventListener('click', trackEmployeeData);
+addEmployeesBtn.addEventListener("click", trackEmployeeData);
