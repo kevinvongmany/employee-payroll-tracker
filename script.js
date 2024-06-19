@@ -65,16 +65,20 @@ const displayAverageSalary = function (employeesArray) {
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
-  let randomEmployee;
+  let randomEmployeeName;
   
   // we need to get the number of employees entered in the table
+  let numEmployees = employeesArray.length;
 
   // we take the number, and pass it into our RNG function below, to generate a random index
+  let randomIdx = getRandomInt(numEmployees);
 
   // we access the array using the index we randomly generate and grab the person's first and last name
+  let randomEmployee = employeesArray[randomIdx];
+  randomEmployeeName = `${randomEmployee.firstName} ${randomEmployee.lastName}`
 
   // we log the person into console
-  console.log(`Congratulations to ${randomEmployee} our random drawing winner!`);
+  console.log(`Congratulations to ${randomEmployeeName}, our random drawing winner!`);
 };
 
 /* 
