@@ -3,11 +3,11 @@
 This repository contains source code for JavaScript functions that have been built upon provided starter code, for the Week 3 Bootcamp Challenge. The source code contains 3 functions that has been requested to add further functionality for a payroll tracking webpage.
 
 1. Collecting employee(s) data (`collectEmployees`):
-   - First Name
-   - Last Name
-   - Salary
+   - First Name (`.firstName`)
+   - Last Name (`.lastName`)
+   - Salary (`.salary`)
 2. Logging company wide salary averages (`displayAverageSalary`)
-3. Selecting a random employee from data, and logging a congratulatory message.
+3. Selecting a random employee from data, and logging a congratulatory message (`getRandomEmployee`).
 
 ## Deploy
 
