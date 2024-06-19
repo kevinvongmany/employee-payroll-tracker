@@ -1,6 +1,41 @@
-# 03 JavaScript: Employee Payroll Tracker
+# Employee Payroll Tracker
 
-## Your Task
+This repository contains source code for JavaScript functions that have been built upon provided starter code, for the Week 3 Bootcamp Challenge. The source code contains 3 functions that has been requested to add further functionality for a payroll tracking webpage.
+
+1. Collecting employee(s) data (`collectEmployees`):
+   - First Name (`.firstName`)
+   - Last Name (`.lastName`)
+   - Salary (`.salary`)
+2. Logging company wide salary averages (`displayAverageSalary`)
+3. Selecting a random employee from data, and logging a congratulatory message (`getRandomEmployee`).
+
+## Additional Resources
+In addition to the base starter code provided in this project, many functions were extracted from external sources:
+
+- Extracting values of an array into values (`collectEmployees`): https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array
+- Total sum of all values in a number array (`displayAverageSalary`): https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/
+- Random array index generator (`getRandomInt`): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+## Deploy
+
+The final webpage for this can be accessed here: https://kevinvongmany.github.io/employee-payroll-tracker/.
+
+Users can access the HTML source code through the repo or in a browser DevTools within a Chromium/Firefox browser by pressing `F12`, `CTRL+SHIFT+I` (Windows) or `CMD+SHIFT+I` (MacOS). The console DevTools should also display the required functionality, as per the samples below.
+
+## Samples
+
+Samples for the employee payroll tracking webpage and its required functionality can be found here:
+
+### Collecting employee data
+![Sample screenshot of the results after adding in two employees](docs/sample-collect-employee-data.png)
+
+### Displaying average salaries
+![Sample screenshot of the results of the average salaries found in the console inside DevTools](docs/sample-average-salaries.png)
+
+### Randomly selecting employee
+![Sample screenshot of DevTools console demonstrating the selection of a random employee name](docs/sample-random-employee.png)
+
+## JavaScript Development
 
 This week's Challenge requires you to modify starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
@@ -96,11 +131,3 @@ This Challenge is graded based on the following criteria:
   * chooses an employee at random and logs "Congratulations to <employeeFirstName> <employeeLastName>, our random drawing winner!" (15 points)
 
   * random selection method should allow for all employees to be chosen in the drawing (15 points)
-
-## How to Submit the Challenge
-
-Follow the link below to open this autograded assignment in a new tab. Once you have completed the assignment in the Ed platform, submit it and you will return to Bootcamp Spot.
-
-> **note** You are allowed to miss up to two Challenge assignments and still earn your certificate. If you complete all Challenge assignments, your lowest two grades will be dropped. If you wish to skip this assignment, click Next, and move on to the next Module.
-
-> **important** No matter how difficult the course becomes, you must always turn in original work. Plagiarism is not tolerated. If your instructional or support staff determine that you have plagiarized work, your Student Success Advisor will determine the appropriate course of action based on university policy. Such actions may include, but are not limited to, a documented plagiarism discussion, an incomplete or failing grade assignment, or ineligibility for graduation.
