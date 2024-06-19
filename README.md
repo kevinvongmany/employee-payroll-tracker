@@ -9,6 +9,13 @@ This repository contains source code for JavaScript functions that have been bui
 2. Logging company wide salary averages (`displayAverageSalary`)
 3. Selecting a random employee from data, and logging a congratulatory message (`getRandomEmployee`).
 
+## Additional Resources
+In addition to the base starter code provided in this project, many functions were extracted from external sources:
+
+- Extracting values of an array into values (`collectEmployees`): https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array
+- Total sum of all values in a number array (`displayAverageSalary`): https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/
+- Random array index generator (`getRandomInt`): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
 ## Deploy
 
 The final webpage for this can be accessed here: https://kevinvongmany.github.io/employee-payroll-tracker/.
