@@ -1,6 +1,34 @@
-# 03 JavaScript: Employee Payroll Tracker
+# Employee Payroll Tracker
 
-## Your Task
+This repository contains source code for JavaScript functions that have been built upon provided starter code, for the Week 3 Bootcamp Challenge. The source code contains 3 functions that has been requested to add further functionality for a payroll tracking webpage.
+
+1. Collecting employee(s) data (`collectEmployees`):
+   - First Name
+   - Last Name
+   - Salary
+2. Logging company wide salary averages (`displayAverageSalary`)
+3. Selecting a random employee from data, and logging a congratulatory message.
+
+## Deploy
+
+The final webpage for this can be accessed here: https://kevinvongmany.github.io/employee-payroll-tracker/.
+
+Users can access the HTML source code through the repo or in a browser DevTools within a Chromium/Firefox browser by pressing `F12`, `CTRL+SHIFT+I` (Windows) or `CMD+SHIFT+I` (MacOS). The console DevTools should also display the required functionality, as per the samples below.
+
+## Samples
+
+Samples for the employee payroll tracking webpage and its required functionality can be found here:
+
+### Collecting employee data
+![Sample screenshot of the results after adding in two employees](docs/sample-collect-employee-data.png)
+
+### Displaying average salaries
+![Sample screenshot of the results of the average salaries found in the console inside DevTools](docs/sample-average-salaries.png)
+
+### Randomly selecting employee
+![Sample screenshot of DevTools console demonstrating the selection of a random employee name](docs/sample-random-employee.png)
+
+## JavaScript Development
 
 This week's Challenge requires you to modify starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
