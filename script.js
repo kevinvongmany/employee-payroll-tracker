@@ -53,13 +53,10 @@ const displayAverageSalary = function (employeesArray) {
   }, 0); // this function sums all the numbers of an array into a total number
   // ref: https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/
   
-  const average = (sum / employeeTotal).toLocaleString("en-US", {
-    style: "currency",
-    currency: "USD",
-  }); // calculate the average and convert it to currency format
+  const average = parseFloat((sum / employeeTotal)).toFixed(2); // calculate the average and round off to 2 decimal places
 
   // log the value in the console, we don't need to return anything
-  console.log(`The average employee salary between our ${employeeTotal} employee(s) is ${average}`);
+  console.log(`The average employee salary between our ${employeeTotal} employee(s) is $${average}`);
 };
 
 // Select a random employee
