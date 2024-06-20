@@ -28,18 +28,15 @@ const collectEmployees = function () {
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  const salaries = employeesArray.map(a => a.salary); 
   // creates an array: `[123, 456, ...]` refer to README.md
-  
+  const salaries = employeesArray.map(a => a.salary); 
   const employeeTotal = salaries.length; 
-
   // sums all values in number array, refer to README.md
   const sum = salaries.reduce((acc, current) => {
     return acc + current;
   }, 0); 
-
-  const average = parseFloat((sum / employeeTotal)).toFixed(2); 
   // calculate the average and round to 2 decimal places, e.g 100.67
+  const average = parseFloat((sum / employeeTotal)).toFixed(2); 
 
   console.log(`The average employee salary between our ${employeeTotal} employee(s) is $${average}`);
 };
