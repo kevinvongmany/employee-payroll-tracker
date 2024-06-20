@@ -18,7 +18,7 @@ In addition to the base starter code provided in this project, many functions we
 
 ## Deploy
 
-The final webpage for this can be accessed here: https://kevinvongmany.github.io/employee-payroll-tracker/.
+The final webpage for these added functions can be accessed here: https://kevinvongmany.github.io/employee-payroll-tracker/.
 
 Users can access the HTML source code through the repo or in a browser DevTools within a Chromium/Firefox browser by pressing `F12`, `CTRL+SHIFT+I` (Windows) or `CMD+SHIFT+I` (MacOS). The console DevTools should also display the required functionality, as per the samples below.
 
