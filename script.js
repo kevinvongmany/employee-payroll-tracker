@@ -15,16 +15,21 @@ const collectEmployees = function () {
     employee.firstName = prompt("Enter first name: ");
     employee.lastName = prompt("Enter last name: ");
     let inputSalary = prompt("Enter salary: "); 
-
-    if (!isNaN(inputSalary)) { // checks if input is a valid number
-      employee.salary = Number(inputSalary);
-    }
+    employee.salary = validateSalary(inputSalary);
 
     employees.push(employee);
     addEmployees = confirm("Do you wish to add more employees?"); // ask user to go again or finish
   };
   return employees;
 };
+
+// Validate salary input to ensure it's a number
+const validateSalary = function (salary) {
+  while (isNaN(salary)) {
+    salary = prompt("Entered value is invalid, please enter a number (e.g. 120020, 38000.99):")
+  };
+  return Number(salary);
+}
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
